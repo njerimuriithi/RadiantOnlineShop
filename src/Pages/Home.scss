@@ -1,0 +1,71 @@
+.cardContainer{
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-evenly;
+    cursor: pointer;
+
+    card{
+        position: relative;
+       
+       
+        .imageContainer{
+            position: relative;
+
+            img{
+                height: 300px;
+                width: 300px;
+                margin-left: 10px;
+               
+            }
+        }
+            .contentsContainer{
+                position: absolute;
+                top: 8px;
+                left: 16px;
+                color: white;
+                font-size: 15px;
+                font-weight: bolder;
+                background-color: #BD1616;
+                opacity: 0.8;
+                height: 220px;
+                width: 300px;
+                clip-path: polygon(0 0, 84% 0, 21% 100%, 0% 100%);
+               
+                   .iconButtonContainer{
+                  display: flex;
+                  cursor: pointer;
+                  
+                  
+                  &:hover{
+                    transition: 2s ease-in;
+
+
+                  }
+                   }
+               
+                    button{
+                        border-style: none;
+                    background-color: inherit;
+                    color: white;
+                        font-size:15px ;
+                        font-weight: bolder;
+    
+                        .arrowIcon{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+        
+    
+                        }
+                    }
+
+                
+
+               
+            }
+        
+
+    }
+   
+}
