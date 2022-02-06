@@ -1,4 +1,5 @@
 import React from 'react';
+import NewProducts from '../components/NewProducts/NewProducts';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import './Home.scss'
 function Home() {
@@ -50,7 +51,9 @@ function Home() {
 
 
       </div>
-      
+      <div className='sections'>
+          <NewProducts/>
+      </div>
   </div>;
 }
 
