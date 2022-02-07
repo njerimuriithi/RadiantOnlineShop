@@ -6,11 +6,13 @@ import './App.css';
 //components import
 import Home from "./Pages/Home"
 //import NewProducts from './components/NewProducts/NewProducts';
+//import Banner from './components/Banner/Banner';
 
 
 function App() {
   return (
     <div className="App">
+    
     <Home/>
     </div>
   );
