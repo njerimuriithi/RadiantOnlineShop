@@ -7,12 +7,12 @@ import './App.css';
 //import Home from "./Pages/Home"
 //import NewProducts from './components/NewProducts/NewProducts';
 //import Banner from './components/Banner/Banner';
-import ExtensionsProduct from './components/Products/ExtensionsProduct';
-
+//import ExtensionsProduct from './components/Products/ExtensionsProduct';
+import NavBar from './components/NavBar/NavBar';
 function App() {
   return (
     <div className="App">
-      <ExtensionsProduct/>
+     <NavBar/>
      </div>
   );
 }
