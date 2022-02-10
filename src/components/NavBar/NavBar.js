@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Input from '../Input/Input'
 import './NavBar.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faEnvelope ,faLocationDot,faPhone,faUser,faCartShopping,faHeart} from '@fortawesome/free-solid-svg-icons'
-
+import NavBarList from '../NavBarList/NavBarList'
+import CartContext from '../../context/Cart/CartContext'
 
 function NavBar() {
+
+    const {cartItems} = useContext(CartContext)
 
   return <div>
     <div className='navContainer'>
@@ -33,16 +36,25 @@ function NavBar() {
                 </div>
             
                 <div className='cartIcon'>
+                {cartItems.length > 0 &&<div className='itemCount'>
+                        <span>{cartItems.length}</span></div>
+                        
+                        }
                     <div className='cart'>  <FontAwesomeIcon icon={faCartShopping}/></div>
-               
+                         
                     <h3>Your cart</h3>
+                   
                 </div>
                 
            
             
             </div>
         </div>
-        </div>      
+        </div>
+        <div className='navbarlistSection'>
+        <NavBarList/>   
+        </div>
+          
   </div>;
 }
 

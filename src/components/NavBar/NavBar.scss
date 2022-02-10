@@ -35,14 +35,15 @@
 
         h1{
             font-size: 44px;
+            color: white;
+            margin: 12px;
 
-            &:hover{
-                color: #f30b0b;
-            }
+
+          
             span{
                 color: red;
                 font-size: 45px;
-                margin-left: -8px;
+        
             }
         }
 
@@ -78,10 +79,14 @@
 
                 font-size: 20px;
                 margin-bottom: -6px;
-                &:hover{
-                    color: #BD1616;
-                }   
-            }
+               }
+                
+                .itemCount{
+                    background-color: #041C32;
+                    color: red;
+                    font-size: 19px;
+                }
+            
            }
         }
     }

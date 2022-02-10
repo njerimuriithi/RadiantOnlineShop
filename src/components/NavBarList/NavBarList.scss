@@ -1,0 +1,24 @@
+.navbarlistContainer{
+    margin-left: 20%;
+
+    ul{
+        display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+        li{
+            list-style: none;
+
+
+            a{
+                color: black;
+                font-size: 22px;
+                font-weight: bolder;
+                text-decoration: none;
+               
+                &:hover{
+                    text-decoration: underline;
+                    
+                }
+            }
+        }
+    }
+}
