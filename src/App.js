@@ -11,6 +11,10 @@ import Home from "./Pages/Home"
 //import ExtensionsProduct from './components/Products/ExtensionsProduct';
 import NavBar from './components/NavBar/NavBar';
 import ExtensionsProduct from './components/Products/ExtensionsProduct';
+//import SighUp from './components/sighnup/SighUp';
+import HomeWare from './components/Products/HomeWare';
+import PhoneProducts from './components/Products/PhoneProducts';
+import Footer from './components/Footer/Footer';
 function App() {
   return (
    
@@ -18,11 +22,16 @@ function App() {
      <BrowserRouter>
       <div className="App">
      <NavBar/>
-    
+       
      <Routes>
        <Route path="/" element={<Home/>} exact/>
        <Route path="extensionproduct" element={<ExtensionsProduct/>}/>
+       <Route path ="homeware" element ={<HomeWare/>}/>
+       <Route path="phoneproducts" element={<PhoneProducts/>}/>
+       
+
      </Routes>
+     <Footer/>
      </div>
      </BrowserRouter>
      

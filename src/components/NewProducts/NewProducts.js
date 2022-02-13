@@ -53,7 +53,7 @@ function NewProducts() {
   return <div>
        <h1>NEW PRODUCTS</h1>
        <Slider 
-       autoplay={true}
+       autoplay={false}
        autoplaySpeed={1500}
        slidesToShow={4}
        slidesToScroll={2}

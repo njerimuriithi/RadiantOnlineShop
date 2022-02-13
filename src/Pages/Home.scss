@@ -11,18 +11,21 @@
        
         .imageContainer{
             position: relative;
-
+            height: 220px;
+    width: 290px;
+    background-color: #d6d2d2;
+    border-radius: 6px;
             img{
-                height: 300px;
-                width: 300px;
+                height: 220px;
+                width: 260px;
                 margin-left: 10px;
                
             }
         }
             .contentsContainer{
                 position: absolute;
-                top: 8px;
-                left: 16px;
+                top: 1px;
+                left: 1px;
                 color: white;
                 font-size: 15px;
                 font-weight: bolder;
@@ -50,6 +53,13 @@
                     color: white;
                         font-size:15px ;
                         font-weight: bolder;
+                        transition: font-size 1s 1s;
+
+                        &:hover{
+
+                            font-size: 20px;
+                            
+                        }
     
                         .arrowIcon{
                             display: flex;

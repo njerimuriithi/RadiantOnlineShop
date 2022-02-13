@@ -1,0 +1,33 @@
+.cartWrapper {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    border-radius: 12px;
+    background-color: white;
+    border: 1px solid gray;
+    padding: 10px;
+    z-index: 10;
+  }
+  
+  .cartInnerWrapper {
+    height: max-content;
+    max-height: 50vh;
+    overflow-y: auto;
+  }
+  
+  .CartCartTotal {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Circle {
+    color: gray;
+    transition: transform 0.2s linear;
+
+    &:hover{
+        transform: rotate(90deg);
+
+    }
+  }
+  

@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
 import './Products.scss'
-import ExtensionsData from "./data"
+import PhoneData from "./phoneData"
 import CartContext from '../../context/Cart/CartContext';
 
-function ExtensionsProduct () {
+function PhoneProducts () {
  const  {addToCart} = useContext(CartContext)
 
   return <div className='mainContainer'>
-    {ExtensionsData.map((d)=>(
+    {PhoneData.map((d)=>(
     <div className='main'>
       
         <div className='productContainer'>
@@ -20,7 +20,7 @@ function ExtensionsProduct () {
         <h2>{d.price}/=</h2>
          <div className='buttonContainer'>
            <button className='btn-grad'
-            onClick={()=> addToCart(ExtensionsData)} >
+            onClick={()=> addToCart(PhoneData)} >
               Add To Cart</button>
            <button className='btn-grad' >Buy Now</button>
          </div>
@@ -45,4 +45,4 @@ function ExtensionsProduct () {
 
 }
 
-export default ExtensionsProduct ;
+export default PhoneProducts ;

@@ -6,7 +6,7 @@ import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons'
 function Input() {
   return <div className='inputContainer'>
       <div className='SearchIcon'>
-      <FontAwesomeIcon icon={faMagnifyingGlass}/>  
+      <FontAwesomeIcon icon ={ faMagnifyingGlass}/> 
       </div>
       <input  placeholder='Search'/>
   </div>;

@@ -5,66 +5,91 @@ import NewProducts from '../components/NewProducts/NewProducts';
 import Banner from '../components/Banner/Banner';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import './Home.scss'
+import SighUp from '../components/sighnup/SighUp';
 function Home() {
 let Navigate =useNavigate();
 
-    const data =[
-        {
-            id:"Extensions",
-            Title:"Electrical Collections",
-            img:"/Assets/Electricals/Extlogo.png",
-          
 
-        },
-        {
-            id:"Phone Accesorries",
-            Title:"Phone Accessories",
-            img:"/Assets/Phone/phoneacc.png",
-        },
-        {
-            id:"Homeware",
-            Title:"Homeware Collections",
-            img:"/Assets/Home/home.png",
-        
+const handleElectricalPage =()=>{
+    Navigate('/extensionproduct')
+}
 
-        },
-    ]
+
+const handlePhoneProducts=()=>{
+    Navigate('/phoneproducts')
+}
+
+const handleKitchenWarePage  =()=>{
+    Navigate('/homeware')
+}
   return <div className='homeContainer'>
       <div className='cardContainer'>
-          {data.map((item   )=>(
-              
-               <card>
-               <div className='imageContainer' key={item.id}>
-                   <img src={item.img}  alt='Extension logo'/>
+           {/*Electricals card */}
+           <card>
+               <div className='imageContainer'>
+                   <img src={process.env.PUBLIC_URL +'/Assets/Electricals/Extlogo.png'}  alt='Extension logo'/>
                    </div>
                    <div className='contentsContainer'>
-                   <h2>{item.Title}</h2>
+                   <h2>Electrical Products</h2>
                    <div className='iconButtonContainer'>
      
-                   <button 
-            onClick={() => Navigate(`//${item.id}`)}
+                   <button
+                   onClick={handleElectricalPage}
+          >
+           Shop Now
+           </button>
+           <ArrowForwardIcon className='arrowIcon'/>
+              </div>
+
+              </div>
+              </card>
+                   
+
+               {/*Phone accesorie */}
+               <card>
+               <div className='imageContainer'>
+                   <img src={process.env.PUBLIC_URL +'/Assets/Phone/phoneacc.png'}  alt='Extension logo'/>
+                   </div>
+                   <div className='contentsContainer'>
+                   <h2>Phone Accesorries</h2>
+                   <div className='iconButtonContainer'>
+     
+                   <button
+                   onClick={handlePhoneProducts}
           >
            Shop Now
           </button>
          
                    <ArrowForwardIcon className='arrowIcon'/>
                    </div>
-                   </div>
-                  
-                   
-                   
+                   </div> 
                   
                </card>
-
-          ))}
+               {/*Homeware products */}
+               <card>
+               <div className='imageContainer'>
+                   <img src={process.env.PUBLIC_URL +'/Assets/Home/home.png'}  alt='Extension logo'/>
+                   </div>
+                   <div className='contentsContainer'>
+                   <h2>KitchenWare Products</h2>
+                   <div className='iconButtonContainer'>
      
-        
-
-
+                   <button
+                   onClick={handleKitchenWarePage}
+          >
+           Shop Now
+          </button>
+         
+                   <ArrowForwardIcon className='arrowIcon'/>
+                   </div>
+                   </div> 
+                  
+               </card>
       </div>
       <div className='sections'>
           <NewProducts/>
           <Banner/>
+          <SighUp/>
       </div>
   </div>;
 }

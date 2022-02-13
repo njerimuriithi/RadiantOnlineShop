@@ -1,0 +1,48 @@
+.footerWrapper{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #041C32;
+    color: white;
+
+    h1{
+        color: white;
+    }
+
+    p{
+        text-align: center;
+        font-size: 18px;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+
+    .contactWrapper{
+        margin-left: 3px;
+       .faPhone{
+           color: red;
+           margin-left: 5px;
+       } 
+        .faEnvelope{
+        color: red;
+        margin-left: -14px;
+    } 
+    .faLocation{
+        color: red;
+        margin-left: 16px;
+    } 
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
